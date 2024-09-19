@@ -1,0 +1,158 @@
+Blue circle
+Large latest
+
+recordcount=10000
+operationcount=1000000
+workload=com.yahoo.ycsb.workloads.CoreWorkload
+
+fieldlength=10000
+
+readallfields=true
+
+readproportion=0.1
+updateproportion=0
+scanproportion=0
+insertproportion=0.9
+
+requestdistribution=latest
+
+/usr/bin/java  -classpath /home/raj/ycsb-0.15.0/conf:/home/raj/ycsb-0.15.0/lib/HdrHistogram-2.1.4.jar:/home/raj/ycsb-0.15.0/lib/core-0.15.0.jar:/home/raj/ycsb-0.15.0/lib/htrace-core4-4.1.0-incubating.jar:/home/raj/ycsb-0.15.0/lib/jackson-core-asl-1.9.4.jar:/home/raj/ycsb-0.15.0/lib/jackson-mapper-asl-1.9.4.jar:/home/raj/ycsb-0.15.0/cassandra-binding/lib/cassandra-binding-0.15.0.jar:/home/raj/ycsb-0.15.0/cassandra-binding/lib/cassandra-driver-core-3.0.0.jar:/home/raj/ycsb-0.15.0/cassandra-binding/lib/guava-16.0.1.jar:/home/raj/ycsb-0.15.0/cassandra-binding/lib/metrics-core-3.1.2.jar:/home/raj/ycsb-0.15.0/cassandra-binding/lib/netty-buffer-4.0.33.Final.jar:/home/raj/ycsb-0.15.0/cassandra-binding/lib/netty-codec-4.0.33.Final.jar:/home/raj/ycsb-0.15.0/cassandra-binding/lib/netty-common-4.0.33.Final.jar:/home/raj/ycsb-0.15.0/cassandra-binding/lib/netty-handler-4.0.33.Final.jar:/home/raj/ycsb-0.15.0/cassandra-binding/lib/netty-transport-4.0.33.Final.jar:/home/raj/ycsb-0.15.0/cassandra-binding/lib/slf4j-api-1.7.25.jar com.yahoo.ycsb.Client -t -db com.yahoo.ycsb.db.CassandraCQLClient -p hosts=localhost -s -P workloads/workloadsmall -p measurementtype=timeseries -p timeseries.granularity=20000
+2024-09-17 12:46:04:785 0 sec: 0 operations; est completion in 0 second 
+2024-09-17 12:46:14:771 10 sec: 17989 operations; 1798.9 current ops/sec; est completion in 9 minutes [READ AverageLatency(us)=399.03] [INSERT AverageLatency(us)=504.14] 
+2024-09-17 12:46:24:771 20 sec: 37832 operations; 1984.3 current ops/sec; est completion in 8 minutes [READ AverageLatency(us)=356.17] [INSERT AverageLatency(us)=555.28] 
+2024-09-17 12:46:34:771 30 sec: 58685 operations; 2085.3 current ops/sec; est completion in 8 minutes [READ AverageLatency(us)=353.96] [INSERT AverageLatency(us)=489.13] 
+2024-09-17 12:46:44:771 40 sec: 79536 operations; 2085.1 current ops/sec; est completion in 7 minutes [READ AverageLatency(us)=359.81] [INSERT AverageLatency(us)=490.29] 
+2024-09-17 12:46:54:771 50 sec: 99162 operations; 1962.6 current ops/sec; est completion in 7 minutes [READ AverageLatency(us)=366.72] [INSERT AverageLatency(us)=522.93] 
+2024-09-17 12:47:04:771 60 sec: 120722 operations; 2156 current ops/sec; est completion in 7 minutes [READ AverageLatency(us)=358.86] [INSERT AverageLatency(us)=472.75] 
+2024-09-17 12:47:14:771 70 sec: 142216 operations; 2149.4 current ops/sec; est completion in 7 minutes [READ AverageLatency(us)=383.17] [INSERT AverageLatency(us)=471.96] 
+2024-09-17 12:47:24:771 80 sec: 162277 operations; 2006.1 current ops/sec; est completion in 6 minutes [READ AverageLatency(us)=661.58] [INSERT AverageLatency(us)=479.02] 
+2024-09-17 12:47:34:771 90 sec: 181942 operations; 1966.5 current ops/sec; est completion in 6 minutes [READ AverageLatency(us)=733.42] [INSERT AverageLatency(us)=481.27] 
+2024-09-17 12:47:44:771 100 sec: 202186 operations; 2024.4 current ops/sec; est completion in 6 minutes [READ AverageLatency(us)=627.75] [INSERT AverageLatency(us)=476.25] 
+2024-09-17 12:47:54:771 110 sec: 221583 operations; 1939.7 current ops/sec; est completion in 6 minutes [READ AverageLatency(us)=853.9] [INSERT AverageLatency(us)=474.2] 
+2024-09-17 12:48:04:771 120 sec: 240747 operations; 1916.4 current ops/sec; est completion in 6 minutes [READ AverageLatency(us)=942.89] [INSERT AverageLatency(us)=471.58] 
+2024-09-17 12:48:14:771 130 sec: 260648 operations; 1990.1 current ops/sec; est completion in 6 minutes [READ AverageLatency(us)=707.68] [INSERT AverageLatency(us)=476.15] 
+2024-09-17 12:48:24:771 140 sec: 279434 operations; 1878.6 current ops/sec; est completion in 6 minutes [READ AverageLatency(us)=959.89] [INSERT AverageLatency(us)=483.25] 
+2024-09-17 12:48:34:771 150 sec: 296933 operations; 1749.9 current ops/sec; est completion in 5 minutes [READ AverageLatency(us)=1375.69] [INSERT AverageLatency(us)=477.99] 
+2024-09-17 12:48:44:771 160 sec: 315941 operations; 1900.8 current ops/sec; est completion in 5 minutes [READ AverageLatency(us)=978.36] [INSERT AverageLatency(us)=473.59] 
+2024-09-17 12:48:54:771 170 sec: 334792 operations; 1885.1 current ops/sec; est completion in 5 minutes [READ AverageLatency(us)=998.83] [INSERT AverageLatency(us)=478.14] 
+2024-09-17 12:49:04:771 180 sec: 351155 operations; 1636.3 current ops/sec; est completion in 5 minutes [READ AverageLatency(us)=1762.94] [INSERT AverageLatency(us)=477.15] 
+2024-09-17 12:49:14:771 190 sec: 369873 operations; 1871.8 current ops/sec; est completion in 5 minutes [READ AverageLatency(us)=1016.07] [INSERT AverageLatency(us)=477.08] 
+2024-09-17 12:49:24:771 200 sec: 388928 operations; 1905.5 current ops/sec; est completion in 5 minutes [READ AverageLatency(us)=929.45] [INSERT AverageLatency(us)=478.22] 
+2024-09-17 12:49:34:771 210 sec: 405973 operations; 1704.5 current ops/sec; est completion in 5 minutes [READ AverageLatency(us)=1549.11] [INSERT AverageLatency(us)=482.48] 
+2024-09-17 12:49:44:771 220 sec: 423745 operations; 1777.2 current ops/sec; est completion in 5 minutes [READ AverageLatency(us)=1323.56] [INSERT AverageLatency(us)=477.58] 
+2024-09-17 12:49:54:771 230 sec: 442506 operations; 1876.1 current ops/sec; est completion in 4 minutes [READ AverageLatency(us)=1059.44] [INSERT AverageLatency(us)=474.51] 
+2024-09-17 12:50:04:771 240 sec: 460619 operations; 1811.3 current ops/sec; est completion in 4 minutes [READ AverageLatency(us)=1132.56] [INSERT AverageLatency(us)=483.99] 
+2024-09-17 12:50:14:771 250 sec: 478255 operations; 1763.6 current ops/sec; est completion in 4 minutes [READ AverageLatency(us)=1291.62] [INSERT AverageLatency(us)=483.75] 
+2024-09-17 12:50:24:771 260 sec: 495925 operations; 1767 current ops/sec; est completion in 4 minutes [READ AverageLatency(us)=1295.17] [INSERT AverageLatency(us)=479.54] 
+2024-09-17 12:50:34:771 270 sec: 513402 operations; 1747.7 current ops/sec; est completion in 4 minutes [READ AverageLatency(us)=1352.82] [INSERT AverageLatency(us)=483.4] 
+2024-09-17 12:50:44:771 280 sec: 531572 operations; 1817 current ops/sec; est completion in 4 minutes [READ AverageLatency(us)=1158.2] [INSERT AverageLatency(us)=481.25] 
+2024-09-17 12:50:54:771 290 sec: 549505 operations; 1793.3 current ops/sec; est completion in 3 minutes [READ AverageLatency(us)=1229.45] [INSERT AverageLatency(us)=479.17] 
+2024-09-17 12:51:04:771 300 sec: 567953 operations; 1844.8 current ops/sec; est completion in 3 minutes [READ AverageLatency(us)=1047.51] [INSERT AverageLatency(us)=483.97] 
+2024-09-17 12:51:14:771 310 sec: 584363 operations; 1641 current ops/sec; est completion in 3 minutes [READ AverageLatency(us)=1777.14] [INSERT AverageLatency(us)=480.79] 
+2024-09-17 12:51:24:771 320 sec: 602326 operations; 1796.3 current ops/sec; est completion in 3 minutes [READ AverageLatency(us)=1187.27] [INSERT AverageLatency(us)=483.17] 
+2024-09-17 12:51:34:771 330 sec: 620811 operations; 1848.5 current ops/sec; est completion in 3 minutes [READ AverageLatency(us)=1080.7] [INSERT AverageLatency(us)=475.52] 
+2024-09-17 12:51:44:771 340 sec: 638947 operations; 1813.6 current ops/sec; est completion in 3 minutes [READ AverageLatency(us)=1173.34] [INSERT AverageLatency(us)=482.57] 
+2024-09-17 12:51:54:771 350 sec: 654999 operations; 1605.2 current ops/sec; est completion in 3 minutes [READ AverageLatency(us)=1635.82] [INSERT AverageLatency(us)=509.2] 
+2024-09-17 12:52:04:771 360 sec: 673275 operations; 1827.6 current ops/sec; est completion in 2 minutes [READ AverageLatency(us)=1149.34] [INSERT AverageLatency(us)=477.54] 
+2024-09-17 12:52:14:771 370 sec: 691221 operations; 1794.6 current ops/sec; est completion in 2 minutes [READ AverageLatency(us)=1289.65] [INSERT AverageLatency(us)=474.12] 
+2024-09-17 12:52:24:771 380 sec: 706761 operations; 1554 current ops/sec; est completion in 2 minutes [READ AverageLatency(us)=1932.12] [INSERT AverageLatency(us)=494.54] 
+2024-09-17 12:52:34:771 390 sec: 724925 operations; 1816.4 current ops/sec; est completion in 2 minutes [READ AverageLatency(us)=1180.92] [INSERT AverageLatency(us)=479.42] 
+2024-09-17 12:52:44:771 400 sec: 742643 operations; 1771.8 current ops/sec; est completion in 2 minutes [READ AverageLatency(us)=1278.45] [INSERT AverageLatency(us)=483.53] 
+2024-09-17 12:52:54:771 410 sec: 760759 operations; 1811.6 current ops/sec; est completion in 2 minutes [READ AverageLatency(us)=1224.59] [INSERT AverageLatency(us)=476.43] 
+2024-09-17 12:53:04:771 420 sec: 776680 operations; 1592.1 current ops/sec; est completion in 2 minutes [READ AverageLatency(us)=1753.12] [INSERT AverageLatency(us)=502.94] 
+2024-09-17 12:53:14:771 430 sec: 794151 operations; 1747.1 current ops/sec; est completion in 1 minute [READ AverageLatency(us)=1342.72] [INSERT AverageLatency(us)=482.76] 
+2024-09-17 12:53:24:771 440 sec: 811338 operations; 1718.7 current ops/sec; est completion in 1 minute [READ AverageLatency(us)=1304.6] [INSERT AverageLatency(us)=497.6] 
+2024-09-17 12:53:34:771 450 sec: 826565 operations; 1522.7 current ops/sec; est completion in 1 minute [READ AverageLatency(us)=2027.07] [INSERT AverageLatency(us)=499.16] 
+2024-09-17 12:53:44:771 460 sec: 844037 operations; 1747.2 current ops/sec; est completion in 1 minute [READ AverageLatency(us)=1416.5] [INSERT AverageLatency(us)=479.38] 
+2024-09-17 12:53:54:771 470 sec: 861354 operations; 1731.7 current ops/sec; est completion in 1 minute [READ AverageLatency(us)=1439.8] [INSERT AverageLatency(us)=477.88] 
+2024-09-17 12:54:04:771 480 sec: 878375 operations; 1702.1 current ops/sec; est completion in 1 minute [READ AverageLatency(us)=1482.47] [INSERT AverageLatency(us)=489.65] 
+2024-09-17 12:54:14:771 490 sec: 891988 operations; 1361.3 current ops/sec; est completion in 1 minute [READ AverageLatency(us)=2844.68] [INSERT AverageLatency(us)=497.14] 
+2024-09-17 12:54:24:771 500 sec: 909722 operations; 1773.4 current ops/sec; est completion in 50 seconds [READ AverageLatency(us)=1341.7] [INSERT AverageLatency(us)=476.47] 
+2024-09-17 12:54:34:771 510 sec: 926575 operations; 1685.3 current ops/sec; est completion in 41 seconds [READ AverageLatency(us)=1532.68] [INSERT AverageLatency(us)=485.21] 
+2024-09-17 12:54:44:771 520 sec: 942267 operations; 1569.2 current ops/sec; est completion in 32 seconds [READ AverageLatency(us)=1928.92] [INSERT AverageLatency(us)=483.98] 
+2024-09-17 12:54:54:771 530 sec: 959470 operations; 1720.3 current ops/sec; est completion in 23 seconds [READ AverageLatency(us)=1456.04] [INSERT AverageLatency(us)=480.89] 
+2024-09-17 12:55:04:771 540 sec: 976673 operations; 1720.3 current ops/sec; est completion in 13 seconds [READ AverageLatency(us)=1401.63] [INSERT AverageLatency(us)=485.16] 
+2024-09-17 12:55:14:771 550 sec: 991870 operations; 1519.7 current ops/sec; est completion in 5 second [READ AverageLatency(us)=2169.9] [INSERT AverageLatency(us)=488.82] 
+2024-09-17 12:55:21:895 557 sec: 1000000 operations; 1141.21 current ops/sec; [READ AverageLatency(us)=1343.46] [CLEANUP AverageLatency(us)=2459131] [INSERT AverageLatency(us)=481.35] 
+[OVERALL], RunTime(ms), 557125
+[OVERALL], Throughput(ops/sec), 1794.9293246578416
+[TOTAL_GCS_G1_Young_Generation], Count, 1284
+[TOTAL_GC_TIME_G1_Young_Generation], Time(ms), 1707
+[TOTAL_GC_TIME_%_G1_Young_Generation], Time(%), 0.3063944357190935
+[TOTAL_GCS_G1_Old_Generation], Count, 0
+[TOTAL_GC_TIME_G1_Old_Generation], Time(ms), 0
+[TOTAL_GC_TIME_%_G1_Old_Generation], Time(%), 0.0
+[TOTAL_GCs], Count, 1284
+[TOTAL_GC_TIME], Time(ms), 1707
+[TOTAL_GC_TIME_%], Time(%), 0.3063944357190935
+[READ], Operations, 99846
+[READ], AverageLatency(us), 1159.841726258438
+[READ], MinLatency(us), 203
+[READ], MaxLatency(us), 308587
+[READ], Return=OK, 99846
+[READ], 0, 376.045178335535
+[READ], 20000, 357.2808500362231
+[READ], 40000, 362.3721951219512
+[READ], 60000, 517.1646295834373
+[READ], 80000, 677.0707045735476
+[READ], 100000, 915.6135902636917
+[READ], 120000, 828.8482370975984
+[READ], 140000, 1156.054179145113
+[READ], 160000, 1365.070185449358
+[READ], 180000, 987.7781606148953
+[READ], 200000, 1411.732485959208
+[READ], 220000, 1099.8666118871542
+[READ], 240000, 1309.4306875349357
+[READ], 260000, 1259.7016402714933
+[READ], 280000, 1121.6748432815482
+[READ], 300000, 1460.7654970760234
+[READ], 320000, 1124.2105837424986
+[READ], 340000, 1377.3436955258571
+[READ], 360000, 1606.9751571385812
+[READ], 380000, 1218.3368983957218
+[READ], 400000, 1497.690898167618
+[READ], 420000, 1301.334470019892
+[READ], 440000, 1724.6299627791564
+[READ], 460000, 1453.882944132427
+[READ], 480000, 1985.7393803896518
+[READ], 500000, 1733.9190803224844
+[READ], 520000, 1414.2031917925335
+[READ], 540000, 1917.0580474934036
+[CLEANUP], Operations, 1
+[CLEANUP], AverageLatency(us), 2459131.0
+[CLEANUP], MinLatency(us), 2459131
+[CLEANUP], MaxLatency(us), 2459131
+[CLEANUP], 0, 2459131.0
+[INSERT], Operations, 900154
+[INSERT], AverageLatency(us), 484.58980352250836
+[INSERT], MinLatency(us), 346
+[INSERT], MaxLatency(us), 1179128
+[INSERT], Return=OK, 900154
+[INSERT], 0, 530.7241885781758
+[INSERT], 20000, 489.19101571850314
+[INSERT], 40000, 496.41272364733777
+[INSERT], 60000, 475.77582159624416
+[INSERT], 80000, 478.2131699846861
+[INSERT], 100000, 473.18639199187584
+[INSERT], 120000, 479.47625895142505
+[INSERT], 140000, 475.4558466763707
+[INSERT], 160000, 477.6375512780057
+[INSERT], 180000, 478.05645447029644
+[INSERT], 200000, 479.71681500015836
+[INSERT], 220000, 479.12418280962856
+[INSERT], 240000, 482.00547000980174
+[INSERT], 260000, 482.3999750366649
+[INSERT], 280000, 481.18663419089665
+[INSERT], 300000, 482.1000387496771
+[INSERT], 320000, 478.83931007305466
+[INSERT], 340000, 492.55974699967567
+[INSERT], 360000, 484.9641227222759
+[INSERT], 380000, 480.2921825910183
+[INSERT], 400000, 488.9006774225218
+[INSERT], 420000, 489.97851181530393
+[INSERT], 440000, 489.91727195225917
+[INSERT], 460000, 483.23500742366537
+[INSERT], 480000, 484.69430837004404
+[INSERT], 500000, 484.72318731117826
+[INSERT], 520000, 482.9329264354453
+[INSERT], 540000, 486.43686224489795

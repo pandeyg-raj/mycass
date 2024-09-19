@@ -1,0 +1,25 @@
+/usr/bin/java  -classpath /home/raj/ycsb-cassandra-binding-0.17.0/conf:/home/raj/ycsb-cassandra-binding-0.17.0/lib/HdrHistogram-2.1.4.jar:/home/raj/ycsb-cassandra-binding-0.17.0/lib/cassandra-binding-0.17.0.jar:/home/raj/ycsb-cassandra-binding-0.17.0/lib/cassandra-driver-core-3.0.0.jar:/home/raj/ycsb-cassandra-binding-0.17.0/lib/core-0.17.0.jar:/home/raj/ycsb-cassandra-binding-0.17.0/lib/guava-16.0.1.jar:/home/raj/ycsb-cassandra-binding-0.17.0/lib/htrace-core4-4.1.0-incubating.jar:/home/raj/ycsb-cassandra-binding-0.17.0/lib/jackson-core-asl-1.9.4.jar:/home/raj/ycsb-cassandra-binding-0.17.0/lib/jackson-mapper-asl-1.9.4.jar:/home/raj/ycsb-cassandra-binding-0.17.0/lib/metrics-core-3.1.2.jar:/home/raj/ycsb-cassandra-binding-0.17.0/lib/netty-buffer-4.0.33.Final.jar:/home/raj/ycsb-cassandra-binding-0.17.0/lib/netty-codec-4.0.33.Final.jar:/home/raj/ycsb-cassandra-binding-0.17.0/lib/netty-common-4.0.33.Final.jar:/home/raj/ycsb-cassandra-binding-0.17.0/lib/netty-handler-4.0.33.Final.jar:/home/raj/ycsb-cassandra-binding-0.17.0/lib/netty-transport-4.0.33.Final.jar:/home/raj/ycsb-cassandra-binding-0.17.0/lib/slf4j-api-1.7.25.jar site.ycsb.Client -load -db site.ycsb.db.CassandraCQLClient -p hosts=localhost -s -P workloads/workloadsmall
+[OVERALL], RunTime(ms), 6011
+[OVERALL], Throughput(ops/sec), 1663.6167027116953
+[TOTAL_GCS_G1_Young_Generation], Count, 6
+[TOTAL_GC_TIME_G1_Young_Generation], Time(ms), 14
+[TOTAL_GC_TIME_%_G1_Young_Generation], Time(%), 0.23290633837963734
+[TOTAL_GCS_G1_Old_Generation], Count, 0
+[TOTAL_GC_TIME_G1_Old_Generation], Time(ms), 0
+[TOTAL_GC_TIME_%_G1_Old_Generation], Time(%), 0.0
+[TOTAL_GCs], Count, 6
+[TOTAL_GC_TIME], Time(ms), 14
+[TOTAL_GC_TIME_%], Time(%), 0.23290633837963734
+[CLEANUP], Operations, 1
+[CLEANUP], AverageLatency(us), 2219008.0
+[CLEANUP], MinLatency(us), 2217984
+[CLEANUP], MaxLatency(us), 2220031
+[CLEANUP], 95thPercentileLatency(us), 2220031
+[CLEANUP], 99thPercentileLatency(us), 2220031
+[INSERT], Operations, 10000
+[INSERT], AverageLatency(us), 340.7374
+[INSERT], MinLatency(us), 204
+[INSERT], MaxLatency(us), 36479
+[INSERT], 95thPercentileLatency(us), 496
+[INSERT], 99thPercentileLatency(us), 685
+[INSERT], Return=OK, 10000

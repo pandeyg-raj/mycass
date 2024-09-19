@@ -1,0 +1,93 @@
+small latest 
+recordcount=10000
+operationcount=1000000
+workload=site.ycsb.workloads.CoreWorkload
+
+readallfields=true
+fieldlength=3000
+readproportion=0.9
+updateproportion=0
+scanproportion=0
+insertproportion=0.1
+
+requestdistribution=latest
+
+/usr/bin/java  -classpath /home/raj/ycsb-cassandra-binding-0.17.0/conf:/home/raj/ycsb-cassandra-binding-0.17.0/lib/HdrHistogram-2.1.12.jar:/home/raj/ycsb-cassandra-binding-0.17.0/lib/cassandra-binding-0.17.0.jar:/home/raj/ycsb-cassandra-binding-0.17.0/lib/cassandra-driver-core-3.0.0.jar:/home/raj/ycsb-cassandra-binding-0.17.0/lib/core-0.17.0.jar:/home/raj/ycsb-cassandra-binding-0.17.0/lib/guava-16.0.1.jar:/home/raj/ycsb-cassandra-binding-0.17.0/lib/htrace-core4-4.1.0-incubating.jar:/home/raj/ycsb-cassandra-binding-0.17.0/lib/jackson-core-asl-1.9.4.jar:/home/raj/ycsb-cassandra-binding-0.17.0/lib/jackson-mapper-asl-1.9.4.jar:/home/raj/ycsb-cassandra-binding-0.17.0/lib/metrics-core-3.1.2.jar:/home/raj/ycsb-cassandra-binding-0.17.0/lib/netty-buffer-4.0.33.Final.jar:/home/raj/ycsb-cassandra-binding-0.17.0/lib/netty-codec-4.0.33.Final.jar:/home/raj/ycsb-cassandra-binding-0.17.0/lib/netty-common-4.0.33.Final.jar:/home/raj/ycsb-cassandra-binding-0.17.0/lib/netty-handler-4.0.33.Final.jar:/home/raj/ycsb-cassandra-binding-0.17.0/lib/netty-transport-4.0.33.Final.jar:/home/raj/ycsb-cassandra-binding-0.17.0/lib/slf4j-api-1.7.25.jar site.ycsb.Client -t -db site.ycsb.db.CassandraCQLClient -p hosts=localhost -s -P workloads/workloadsmall -p measurementtype=timeseries -p timeseries.granularity=20000
+2024-09-17 21:37:12:383 0 sec: 0 operations; est completion in 0 second 
+2024-09-17 21:37:22:369 10 sec: 38334 operations; 3833.4 current ops/sec; est completion in 4 minutes [READ AverageLatency(us)=236.2] [INSERT AverageLatency(us)=361.85] 
+2024-09-17 21:37:32:368 20 sec: 80123 operations; 4178.9 current ops/sec; est completion in 3 minutes [READ AverageLatency(us)=226.65] [INSERT AverageLatency(us)=329.31] 
+2024-09-17 21:37:42:368 30 sec: 121732 operations; 4160.9 current ops/sec; est completion in 3 minutes [READ AverageLatency(us)=227.77] [INSERT AverageLatency(us)=336.76] 
+2024-09-17 21:37:52:368 40 sec: 162727 operations; 4099.5 current ops/sec; est completion in 3 minutes [READ AverageLatency(us)=230.79] [INSERT AverageLatency(us)=347.49] 
+2024-09-17 21:38:02:368 50 sec: 204657 operations; 4193 current ops/sec; est completion in 3 minutes [READ AverageLatency(us)=227] [INSERT AverageLatency(us)=326.94] 
+2024-09-17 21:38:12:368 60 sec: 246435 operations; 4177.8 current ops/sec; est completion in 3 minutes [READ AverageLatency(us)=227.77] [INSERT AverageLatency(us)=328.96] 
+2024-09-17 21:38:22:368 70 sec: 287786 operations; 4135.1 current ops/sec; est completion in 2 minutes [READ AverageLatency(us)=230.78] [INSERT AverageLatency(us)=326.8] 
+2024-09-17 21:38:32:368 80 sec: 329576 operations; 4179 current ops/sec; est completion in 2 minutes [READ AverageLatency(us)=227.73] [INSERT AverageLatency(us)=327.14] 
+2024-09-17 21:38:42:368 90 sec: 371051 operations; 4147.5 current ops/sec; est completion in 2 minutes [READ AverageLatency(us)=229.18] [INSERT AverageLatency(us)=332.16] 
+2024-09-17 21:38:52:368 100 sec: 412421 operations; 4137 current ops/sec; est completion in 2 minutes [READ AverageLatency(us)=230.45] [INSERT AverageLatency(us)=326.56] 
+2024-09-17 21:39:02:369 110 sec: 453918 operations; 4149.7 current ops/sec; est completion in 2 minutes [READ AverageLatency(us)=229.61] [INSERT AverageLatency(us)=328.46] 
+2024-09-17 21:39:12:368 120 sec: 495323 operations; 4140.5 current ops/sec; est completion in 2 minutes [READ AverageLatency(us)=230.43] [INSERT AverageLatency(us)=329] 
+2024-09-17 21:39:22:368 130 sec: 536530 operations; 4120.7 current ops/sec; est completion in 1 minute [READ AverageLatency(us)=231.21] [INSERT AverageLatency(us)=329.23] 
+2024-09-17 21:39:32:368 140 sec: 577941 operations; 4141.1 current ops/sec; est completion in 1 minute [READ AverageLatency(us)=229.55] [INSERT AverageLatency(us)=331.19] 
+2024-09-17 21:39:42:368 150 sec: 618882 operations; 4094.1 current ops/sec; est completion in 1 minute [READ AverageLatency(us)=233.12] [INSERT AverageLatency(us)=329.01] 
+2024-09-17 21:39:52:368 160 sec: 660345 operations; 4146.3 current ops/sec; est completion in 1 minute [READ AverageLatency(us)=229.66] [INSERT AverageLatency(us)=329.34] 
+2024-09-17 21:40:02:368 170 sec: 701770 operations; 4142.5 current ops/sec; est completion in 1 minute [READ AverageLatency(us)=230.14] [INSERT AverageLatency(us)=329.12] 
+2024-09-17 21:40:12:368 180 sec: 743010 operations; 4124 current ops/sec; est completion in 1 minute [READ AverageLatency(us)=231.27] [INSERT AverageLatency(us)=326.33] 
+2024-09-17 21:40:22:368 190 sec: 784596 operations; 4158.6 current ops/sec; est completion in 53 seconds [READ AverageLatency(us)=229.14] [INSERT AverageLatency(us)=326.64] 
+2024-09-17 21:40:32:368 200 sec: 825809 operations; 4121.3 current ops/sec; est completion in 43 seconds [READ AverageLatency(us)=231.38] [INSERT AverageLatency(us)=327.19] 
+2024-09-17 21:40:42:368 210 sec: 866894 operations; 4108.5 current ops/sec; est completion in 33 seconds [READ AverageLatency(us)=232.28] [INSERT AverageLatency(us)=328.92] 
+2024-09-17 21:40:52:368 220 sec: 907662 operations; 4076.8 current ops/sec; est completion in 23 seconds [READ AverageLatency(us)=233.18] [INSERT AverageLatency(us)=337.72] 
+2024-09-17 21:41:02:368 230 sec: 948839 operations; 4117.7 current ops/sec; est completion in 13 seconds [READ AverageLatency(us)=231.67] [INSERT AverageLatency(us)=328.37] 
+2024-09-17 21:41:12:368 240 sec: 990157 operations; 4131.8 current ops/sec; est completion in 3 second [READ AverageLatency(us)=230.71] [INSERT AverageLatency(us)=325.25] 
+2024-09-17 21:41:16:968 244 sec: 1000000 operations; 2139.78 current ops/sec; [READ AverageLatency(us)=231.05] [CLEANUP AverageLatency(us)=2217917] [INSERT AverageLatency(us)=326.81] 
+[OVERALL], RunTime(ms), 244600
+[OVERALL], Throughput(ops/sec), 4088.3074407195422
+[TOTAL_GCS_G1_Young_Generation], Count, 160
+[TOTAL_GC_TIME_G1_Young_Generation], Time(ms), 252
+[TOTAL_GC_TIME_%_G1_Young_Generation], Time(%), 0.10302534750613246
+[TOTAL_GCS_G1_Old_Generation], Count, 0
+[TOTAL_GC_TIME_G1_Old_Generation], Time(ms), 0
+[TOTAL_GC_TIME_%_G1_Old_Generation], Time(%), 0.0
+[TOTAL_GCs], Count, 160
+[TOTAL_GC_TIME], Time(ms), 252
+[TOTAL_GC_TIME_%], Time(%), 0.10302534750613246
+[READ], Operations, 899595
+[READ], AverageLatency(us), 230.298705528599
+[READ], MinLatency(us), 139
+[READ], MaxLatency(us), 16527
+[READ], Return=OK, 899595
+[READ], 0, 231.19271501487566
+[READ], 20000, 229.21227435852632
+[READ], 40000, 227.49588444586055
+[READ], 60000, 229.1622798813564
+[READ], 80000, 229.81160023077027
+[READ], 100000, 230.07567647137543
+[READ], 120000, 230.33412376551112
+[READ], 140000, 231.4127020535931
+[READ], 160000, 230.76218011645577
+[READ], 180000, 230.2692116539283
+[READ], 200000, 232.7787843803056
+[READ], 220000, 231.06254887684383
+[READ], 240000, 231.3257906576684
+[CLEANUP], Operations, 1
+[CLEANUP], AverageLatency(us), 2217917.0
+[CLEANUP], MinLatency(us), 2217917
+[CLEANUP], MaxLatency(us), 2217917
+[CLEANUP], 0, 2217917.0
+[INSERT], Operations, 100405
+[INSERT], AverageLatency(us), 331.0866490712614
+[INSERT], MinLatency(us), 215
+[INSERT], MaxLatency(us), 15724
+[INSERT], Return=OK, 100405
+[INSERT], 0, 344.57677450507003
+[INSERT], 20000, 341.85134313844657
+[INSERT], 40000, 328.09125794459766
+[INSERT], 60000, 326.8245255825126
+[INSERT], 80000, 329.3908446473627
+[INSERT], 100000, 328.8093719332679
+[INSERT], 120000, 330.317041265311
+[INSERT], 140000, 329.02622673434854
+[INSERT], 160000, 327.9318758304143
+[INSERT], 180000, 326.6786653910548
+[INSERT], 200000, 333.89077373688065
+[INSERT], 220000, 326.3011675005957
+[INSERT], 240000, 326.9536817102138

@@ -1,0 +1,19 @@
+ ./bin/ycsb.sh run cassandra-cql -p hosts="localhost" -s -P workloads/workloadsmall -p measurementtype=timeseries -p timeseries.granularity=20000 > HalfLatest.txt
+
+ create table usertable (
+        y_id varchar primary key,
+        field0 varchar,
+        field1 varchar,
+        field2 varchar,
+        field3 varchar,
+        field4 varchar,
+        field5 varchar,
+        field6 varchar,
+        field7 varchar,
+        field8 varchar,
+        field9 varchar);
+
+
+ ./nodetool tablestats ycsb.usertable > afterHalflatest.txt
+
+ ./bin/ycsb.sh load cassandra-cql -p hosts="localhost" -s -P workloads/workloadsmall

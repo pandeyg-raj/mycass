@@ -1,0 +1,35 @@
+recordcount=10000
+operationcount=1000000
+workload=site.ycsb.workloads.CoreWorkload
+
+readallfields=true
+fieldlength=3400
+readproportion=1.0
+updateproportion=0
+scanproportion=0
+insertproportion=0.0
+
+requestdistribution=latest
+
+
+#-p measurementtype=hdrhistogram -p hdrhistogram.fileoutput=true
+
+#./bin/ycsb.sh load cassandra-cql -p hosts="localhost" -s -P workloads/workloadsmall -p measurementtype=hdrhistogram -p hdrhistogram.fileoutput=true > transactions10.dat
+
+# ./bin/ycsb.sh run cassandra-cql -p hosts="localhost" -s -P workloads/workloadsmall -p measurementtype=hdrhistogram -p hdrhistogram.fileoutput=true > transactions10.dat
+
+
+#ps auwx | grep cassandra
+#sudo kill 
+#sudo kill -9 `sudo lsof -t -i:7199`
+
+#  ./bin/ycsb.sh load cassandra-cql -p hosts="localhost" -s -P workloads/workloadsmall > transactions10.dat
+
+# ./bin/ycsb.sh run cassandra-cql -p hosts="localhost" -s -P workloads/workloadsmall -p measurementtype=timeseries -p timeseries.granularity=20000 > transactions10.dat
+
+#use ycsb;
+#DROP TABLE ycsb.usertable;
+#./nodetool -i usertable tablestats
+# ./nodetool tablestats ycsb.usertable
+# cd IdeaProjects/cassandra/
+#  167  ant build-jmh
